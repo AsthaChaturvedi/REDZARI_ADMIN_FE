@@ -16,6 +16,7 @@ import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 import Login from "./pages/login/Login";
 import { useSelector } from "react-redux";
+import ProductModal from "./components/product-modal/productModal";
 function App() {
   const { isAdmin } = useSelector((state) => state.user);
 
@@ -52,6 +53,9 @@ function App() {
                 </Route>
                 <Route path="/newproduct">
                   <NewProduct />
+                </Route>
+                <Route path="/productModal">
+                  <ProductModal />
                 </Route>
               </div>
             </>

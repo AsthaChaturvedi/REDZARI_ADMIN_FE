@@ -43,6 +43,7 @@ export default function Product() {
               <span className="productInfoKey">in stock:</span>
               <span className="productInfoValue">{product.inStock}</span>
             </div>
+            
           </div>
         </div>
       </div>
